@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #000, #1a73e8);
+    background-color: #f0f0f0;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a73e8;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #1a73e8;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #0555c8;
+    transition: width 0.3s;
+}
+
+nav a:hover {
+    background-color: #0555c8;
+    color: #fff;
+    border-radius: 5px;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+nav ul::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #1a73e8;
+}
+
+h3 {
+    font-size: 18px;
+    color: #1a73e8;
+}
+
+h4 {
+    font-size: 16px;
+    color: #1a73e8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 10px;
+}
+
+#comment-form {
+    background-color: #000;
+    border: 1px solid #000;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#comment-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#comment-form input,
+#comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#comment-form button {
+    background-color: #1a73e8;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#comment-form button:hover {
+    background-color: #0555c8;
+}
+
+/* Estilo para el artículo con el ID "comments" 
+article#comments {
+    background-color: #007bff;  Color de fondo azul 
+    color: white;  Color de texto blanco 
+    padding: 10px;
+    border: 2px solid #007bff;  Borde azul 
+    border-radius: 10px;
+    width: 300px; /* Ancho del globo de conversación 
+  }
+
+   Estilo para el encabezado h3 dentro del artículo 
+  article#comments h3 {
+    font-size: 20px;
+    margin: 0;  Elimina el margen superior del encabezado 
+  }
+
+   Estilo para la lista no ordenada con el ID "comment-list" 
+  ul#comment-list {
+    list-style: none;
+    padding: 0;
+  }*/
