@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Principal.php">Inicio</a></li>
+            <li><a href="sobre_mi.php">Sobre mí</a></li>
+            <li><a href="contacto.php">Contacto</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Información de contacto</h2>
+        <p>Correo: max.lopez.22s@utzmg.edu.mx</p><br>
+        <p>Telefono: 3331410908</p>
+    </section>
+
+    <footer>
+        <p>Derechos de autor © 2023 Mi Blog sobre Blue Lock</p>
+    </footer>
+</body>
+</html>
+<style>
+    body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #000, #1a73e8);
+            background-color: #f0f0f0;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 20px;
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #0555c8;
+            transition: width 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #0555c8;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+
+        nav ul::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        nav li:last-child {
+            margin-right: 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #000;
+        }
+
+        /* Agrega más estilos según tus preferencias */
+
+        footer {
+            text-align: center;
+            background-color: #1a73e8;
+            color: #fff;
+            padding: 10px;
+        }
+
+</style>
